@@ -2,8 +2,6 @@
 
 ## Contacts
 
-====
-
 - Location: Minsk,Belarus
 - Phone: +375 (29) 676-02-05
 - Email: Vlad6097944@gmail.com
@@ -16,14 +14,10 @@
 
 ## About Me
 
-====
-
 This is my first project on Vanila JS.
 This project is a SPA (game).
 
 ## Skills
-
-====
 
 - HTML
 - CSS
@@ -33,8 +27,6 @@ This project is a SPA (game).
 
 ## Code Examples
 
-====
-
 ```
 function isSquare(n) {
   return Math.sqrt(n) % 1 === 0;
@@ -43,16 +35,12 @@ function isSquare(n) {
 
 ## Experience
 
-====
-
 - Pet-projects:
 
 * [website for construction company](https://github.com/vladklen/spartis.by)
 * [Bomberman game on vanila JS](https://github.com/vladklen/Bomberman-)
 
 ## Education
-
-====
 
 - University: Belarusian National Technical University, Civil Engineering
 - Courses:
@@ -62,7 +50,5 @@ function isSquare(n) {
 * [it-academy (React)](https://www.it-academy.by/course/front-end-developer/)
 
 ## English
-
-====
 
 B1
