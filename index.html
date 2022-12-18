@@ -1,12 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CV project</title>
-</head>
-<body>
-	<h1>Test</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/fonts/icon-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;0,800;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#code" class="nav__link">Code</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#english" class="nav__link">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="section section__profile">
+          <div class="profile__title">
+            <h1 class="profile__main-title">VLADISLAV KLENOVSKI</h1>
+            <img
+              class="profile__img"
+              src="./assets/img/profile-img.png"
+              alt="profile-img"
+            />
+          </div>
+          <h3 class="profile__subtitle">Junior frontend developer</h3>
+        </section>
+        <section id="contacts" class="section section__contacts">
+          <h2 class="title contacts__title icon-address-book">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="list__item"><span>Location:</span> Minsk,Belarus</li>
+            <li class="list__item"><span>Phone:</span> +375 (29) 676-02-05</li>
+            <li class="list__item">
+              <span>Email:</span> Vlad6097944@gmail.com
+            </li>
+            <li class="list__item">
+              <span>Socials:</span>
+              <ul class="sublist">
+                <li class="list__item">
+                  <a target="_blank" href="https://github.com/vladklen">Git</a>
+                </li>
+                <li class="list__item">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vladklen/?locale=en_US"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a target="_blank" href="https://telegram.me/vladklen">
+                    Telegram</a
+                  >
+                </li>
+                <li class="list__item">
+                  <a target="_blank" href="https://wa.me/375296760205">
+                    WhatsApp</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section id="about" class="section section__about">
+          <h2 class="title icon-user">About me</h2>
+          <p>
+            Passionate junior front-end developer with a desire to learn and
+            grow in a collaborative team environment. Skilled in HTML, CSS,
+            JavaScript and react.
+          </p>
+          <p>
+            Since 2014 worked as a civil engineer. I am able to work in a team
+            and also have skills of leadership and team management.
+          </p>
+        </section>
+        <section id="skills" class="section section__skills">
+          <h2 class="title icon-stats-bars2">Skills</h2>
+          <ul>
+            <li class="list__item">
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="empty-dot"></span>
+              <p>HTML</p>
+            </li>
+            <li class="list__item">
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="empty-dot"></span>
+              <p>CSS</p>
+            </li>
+            <li class="list__item">
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="empty-dot"></span>
+              <span class="empty-dot"></span>
+              <p>JS</p>
+            </li>
+            <li class="list__item">
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="empty-dot"></span>
+              <span class="empty-dot"></span>
+              <span class="empty-dot"></span>
+              <p>React</p>
+            </li>
+            <li class="list__item">
+              <span class="fill-dot"></span>
+              <span class="fill-dot"></span>
+              <span class="empty-dot"></span>
+              <span class="empty-dot"></span>
+              <span class="empty-dot"></span>
+              <p>Git</p>
+            </li>
+          </ul>
+        </section>
+        <section id="code" class="section section__code">
+          <h2 class="title icon-embed2">Code examples</h2>
+          <code class="code__content">
+            function isSquare(n) { return Math.sqrt(n) % 1 === 0; }
+          </code>
+        </section>
+        <section id="projects" class="section section__projects">
+          <h2 class="title projects__title icon-spinner3">Projects</h2>
+          <div class="projects__content">
+            <ul class="projects__list">
+              <li class="list__item">
+                <a
+                  target="_blank"
+                  href="http://www.spartis.by
+					 "
+                  >Construction company website</a
+                >
+                <span class="icon-html-five"></span>
+                <span class="icon-csswizardry"></span>
+              </li>
+
+              <li class="list__item">
+                <a target="_blank" href="https://github.com/vladklen/Bomberman-"
+                  >Bomberman game on Vanila JS</a
+                >
+                <span class="icon-html-five"></span>
+                <span class="icon-csswizardry"></span>
+                <span class="icon-javascript"></span>
+              </li>
+              <li class="list__item">
+                <a
+                  target="_blank"
+                  href="https://github.com/vladklen/mobileShop-FD3-"
+                  >MobilePhones online store</a
+                >
+                <span class="icon-react"></span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="education" class="section section__education">
+          <h2 class="title education__title icon-library">Education</h2>
+          <div class="education__content">
+            <ul class="education__list">
+              <li class="list__item">
+                <span>University: </span>Belarusian National Technical
+                University, Civil Engineering
+              </li>
+              <li class="list__item">
+                <span>Courses:</span>
+                <ul class="sublist">
+                  <li class="list__item">
+                    <a target="_blank" href="https://www.it-academy.by/"
+                      >it-academy (website development with HTML,CSS and JS)</a
+                    >
+                  </li>
+                  <li class="list__item">
+                    <a target="_blank" href="https://www.it-academy.by/"
+                      >it-academy (web application development with JS )</a
+                    >
+                  </li>
+                  <li class="list__item">
+                    <a target="_blank" href="https://www.it-academy.by/"
+                      >it-academy (React)
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="english" class="section section__language">
+          <h2 class="title icon-earth">English</h2>
+          <p>B1 - Pre-Intermediate</p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a
+          target="_blank"
+          href="https://github.com/vladklen"
+          class="footer__git"
+        >
+          <span class="icon-git"></span>
+          <span>vladklen</span></a
+        >
+        <div class="footer__year">2022</div>
+        <a
+          target="_blank"
+          href="https://rs.school/js/"
+          class="footer__logo"
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>
