@@ -5,6 +5,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 ul,
 p {
@@ -219,6 +220,7 @@ body {
   }
   .main .container {
     grid-template-columns: 1fr;
+    padding: 5px;
   }
   .section__profile {
     grid-column: auto;
@@ -258,4 +260,19 @@ body {
 
 .footer__git span::before {
   font-size: 40px;
+}
+
+@media (max-width: 480px) {
+  .profile__subtitle {
+    line-height: 40px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__git {
+    padding-left: 0px;
+  }
+  .header {
+    display: none;
+  }
 }
