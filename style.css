@@ -70,7 +70,7 @@ body {
 /* --------- Main---------------------- */
 .main .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 50px;
   color: #444;
 }
@@ -130,22 +130,20 @@ body {
 .contacts__list {
   padding: 0px;
 }
-.list__item{
-	padding: 10px;
+.list__item {
+  padding: 10px;
 }
 .sublist .list__item {
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
-
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.sublist .list__item:hover{
-	color: rgb(68, 68, 68);
-	scale: 1.2;
-	transition: all 0.5s ease-out;
+.sublist .list__item:hover {
+  color: rgb(68, 68, 68);
+  scale: 1.2;
+  transition: all 0.5s ease-out;
 }
-
 
 .list__item span {
   font-weight: bold;
@@ -181,7 +179,7 @@ body {
 
 .main .sublist a:hover,
 .main .section__projects a:hover {
-	color: rgb(68, 68, 68);
+  color: rgb(68, 68, 68);
 }
 
 .section__skills li {
@@ -227,6 +225,16 @@ body {
 .section__language p {
   padding-top: 10px;
 }
+
+.company__title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.title__job {
+  font-weight: bold;
+}
+
 @media (max-width: 860px) {
   .nav__list {
     justify-content: center;
