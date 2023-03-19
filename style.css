@@ -130,9 +130,22 @@ body {
 .contacts__list {
   padding: 0px;
 }
-.list__item {
-  padding: 10px;
+.list__item{
+	padding: 10px;
 }
+.sublist .list__item {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+
+}
+
+.sublist .list__item:hover{
+	color: rgb(68, 68, 68);
+	scale: 1.2;
+	transition: all 0.5s ease-out;
+}
+
 
 .list__item span {
   font-weight: bold;
@@ -168,7 +181,7 @@ body {
 
 .main .sublist a:hover,
 .main .section__projects a:hover {
-  color: rgb(0, 0, 0);
+	color: rgb(68, 68, 68);
 }
 
 .section__skills li {
