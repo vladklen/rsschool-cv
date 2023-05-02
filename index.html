@@ -17,7 +17,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,31 +32,36 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#contacts" class="nav__link">Contacts</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#code" class="nav__link">Code</a>
-            </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#education" class="nav__link">Education</a>
-            </li>
-            <li class="nav__item">
-              <a href="#english" class="nav__link">English</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__menu">
+          <div class="header__icon">
+            <span></span>
+          </div>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contacts</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">Skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#code" class="nav__link">Code</a>
+              </li>
+              <li class="nav__item">
+                <a href="#projects" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#education" class="nav__link">Education</a>
+              </li>
+              <li class="nav__item">
+                <a href="#english" class="nav__link">English</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -84,24 +88,24 @@
             <li class="list__item">
               <span>Socials:</span>
               <ul class="sublist">
-                <li class="list__item">
+                <li class="list__item icon-git">
                   <a target="_blank" href="https://github.com/vladklen">Git</a>
                 </li>
-                <li class="list__item">
+                <li class="list__item icon-linkedin">
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/vladklen/?locale=en_US"
                     >LinkedIn</a
                   >
                 </li>
-                <li class="list__item">
-                  <a target="_blank" href="https://telegram.me/vladklen">
-                    Telegram</a
+                <li class="list__item icon-telegram">
+                  <a target="_blank" href="https://telegram.me/vladklen"
+                    >Telegram</a
                   >
                 </li>
-                <li class="list__item">
-                  <a target="_blank" href="https://wa.me/375296760205">
-                    WhatsApp</a
+                <li class="list__item icon-whatsapp">
+                  <a target="_blank" href="https://wa.me/375296760205"
+                    >WhatsApp</a
                   >
                 </li>
               </ul>
@@ -166,10 +170,42 @@
           </ul>
         </section>
         <section id="code" class="section section__code">
-          <h2 class="title icon-embed2">Code examples</h2>
-          <code class="code__content">
-            function isSquare(n) { return Math.sqrt(n) % 1 === 0; }
-          </code>
+          <h2 class="title icon-embed2">Experience</h2>
+          <div class="company">
+            <div class="company__title">
+              <div class="title__datee">2014-2022</div>
+              <div class="title__job">Civil engineer</div>
+              <div class="title__name">Spartis LLC</div>
+            </div>
+            <div class="company__decription">
+              <p>
+                After graduating from the University, I worked as a construction
+                master. Then I worked as a foreman and deputy chief engineer.
+                Take part in many projects such as construction of residential
+                buildings, offices, shopping malls. One of the biggest project:
+                Palazzo Shopping Mall in Minsk,Belarus
+              </p>
+              <p>
+                Also developed a website for the company after I started
+                learning frontend development
+              </p>
+            </div>
+          </div>
+          <div class="company">
+            <div class="company__title">
+              <div class="title__datee">2022-present time</div>
+              <div class="title__job">Technical Supervision</div>
+              <div class="title__name">Uavheli LLC</div>
+            </div>
+            <div class="company__decription">
+              <p>
+                Project management and work control on the construction site. I
+                take part in the construction of a new office for the company.
+                The total area of the ​​office and industrial premises reaches
+                4000m2. Liaising with designers and general contractors
+              </p>
+            </div>
+          </div>
         </section>
         <section id="projects" class="section section__projects">
           <h2 class="title projects__title icon-spinner3">Projects</h2>
@@ -210,11 +246,11 @@
           <div class="education__content">
             <ul class="education__list">
               <li class="list__item">
-                <span>University: </span>Belarusian National Technical
-                University, Civil Engineering
+                <div>University:</div>
+                Belarusian National Technical University, Civil Engineering
               </li>
               <li class="list__item">
-                <span>Courses:</span>
+                <div>Courses:</div>
                 <ul class="sublist">
                   <li class="list__item">
                     <a target="_blank" href="https://www.it-academy.by/"
@@ -252,7 +288,7 @@
           <span class="icon-git"></span>
           <span>vladklen</span></a
         >
-        <div class="footer__year">2022</div>
+        <div class="footer__year"></div>
         <a
           target="_blank"
           href="https://rs.school/js/"
@@ -260,5 +296,6 @@
         ></a>
       </div>
     </footer>
+    <script src="scrypt.js"></script>
   </body>
 </html> -->
