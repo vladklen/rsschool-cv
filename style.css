@@ -273,9 +273,11 @@ body.lock {
   flex-direction: row;
 }
 
-.sublist .list__item:hover {
+.sublist .list__item:hover,
+a:hover,
+.title__name a:hover {
   color: rgb(68, 68, 68);
-  scale: 1.2;
+  scale: 1.02;
   transition: all 0.5s ease-out;
 }
 
@@ -285,6 +287,10 @@ body.lock {
 
 .section__about p {
   padding-top: 10px;
+}
+
+.section__code {
+  grid-row-start: span 2;
 }
 
 .contacts__list li:last-child,
@@ -308,7 +314,8 @@ body.lock {
 }
 
 .main .sublist a,
-.main .section__projects a {
+.main .section__projects a,
+.title__name a {
   transition: 0.3s;
   color: rgb(135, 135, 135);
 }
@@ -318,7 +325,8 @@ body.lock {
 }
 
 .main .sublist a:hover,
-.main .section__projects a:hover {
+.main .section__projects a:hover,
+.title__name {
   color: rgb(68, 68, 68);
 }
 
@@ -368,11 +376,25 @@ body.lock {
 
 .company__title {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
+  margin: 15px 0px;
+  padding: 0px 10px;
 }
+
+.company__title > * {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
 .title__job {
   font-weight: bold;
+}
+
+.paragraph {
+  line-height: 2rem;
+  padding: 0px 10px;
 }
 
 /* --------Footer----------- */
